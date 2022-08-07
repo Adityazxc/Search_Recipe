@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">Search Recipe</string>
+    <string name="api_key">7518a436347849f692ffd2f73551f1d7</string>
+    <string name="app_name">RecipeApp</string>
+
+    
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dish_name">Dish Name</string>
+
+    <string name="_2_person">2 Person</string>
+
+    <string name="time">Time</string>
+
+    <string name="like">Like</string>
+    <string name="todo">TODO</string>
+    <string name="resdep">resdep</string>
+    <string name="energi">energi</string>
+    <string name="protein">pfrotein</string>
+    <string name="lemak">lgemak</string>
+    <string name="karbohidrat">karbohgidrat</string>
+    <string name="nama_resep">nama_resep</string>
+    <string name="angka_energi">angka_energi</string>
+    <string name="angka_prjotein">angka_prjotein</string>
+    <string name="angka_lemak">angka_lemak</string>
+    <string name="angka_karbohidrat">angka_karbohidrat</string>
 </resources>

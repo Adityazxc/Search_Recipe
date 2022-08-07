@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2525" />
+        <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/activity_search_recipe.xml" value="0.1" />
+        <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/list_random_recipe.xml" value="0.29375" />
       </map>
     </option>
   </component>

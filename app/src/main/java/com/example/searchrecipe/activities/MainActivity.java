@@ -1,56 +1,67 @@
 package com.example.searchrecipe.activities;
 
+import android.app.ProgressDialog;
+import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
-import android.widget.TextView;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.searchrecipe.Adapter.RandomRecipeAdapter;
+import com.example.searchrecipe.Listeners.RandomRecipeResponseListener;
 import com.example.searchrecipe.R;
-import java.io.IOException;
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
+import com.example.searchrecipe.Models.RandomRecipeApiResponse;
 
 
 public class MainActivity extends AppCompatActivity {
-    private TextView mTextViewResult;
+
+    ProgressDialog dialog;
+    RequestManager manager;
+    RandomRecipeAdapter randomRecipeAdapeter;
+    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mTextViewResult = findViewById(R.id.text_view_result);
-        mTextViewResult.setMovementMethod(new ScrollingMovementMethod());
 
-        OkHttpClient client = new OkHttpClient();
-        String url = "https://edamam-recipe-search.p.rapidapi.com/search?q=chicken";
-        Request request = new Request.Builder()
-                .url(url)
-                .get()
-                .addHeader("X-RapidAPI-Key", "a3c49c7122mshe7e8ea32e4fb810p181213jsnbe2798adddc8")
-                .addHeader("X-RapidAPI-Host", "edamam-recipe-search.p.rapidapi.com")
-                .build();
+        dialog=new ProgressDialog(this);
+        dialog.setTitle("Loading....");
 
-        client.newCall(request).enqueue(new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-                e.printStackTrace();
-            }
+        manager=new RequestManager(this);
+        manager.getRandomRecipes(randomRecipeResponseListener);
+        dialog.show();
 
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                if (response.isSuccessful()) {
-                    String myResponse = response.body().string();
-                    MainActivity.this.runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            mTextViewResult.setText(myResponse);
-                        }
-                    });
-                }
-            }
-        });
+
     }
+
+
+    private final RandomRecipeResponseListener randomRecipeResponseListener= new RandomRecipeResponseListener() {
+        @Override
+        public void didFetch(RandomRecipeApiResponse response, String message) {
+            recyclerView=findViewById(R.id.recycler_random);
+            recyclerView.setHasFixedSize(true);
+            recyclerView.setLayoutManager(new GridLayoutManager(MainActivity.this,1));
+            randomRecipeAdapeter = new RandomRecipeAdapter(MainActivity.this,response.recipes);
+            recyclerView.setAdapter(randomRecipeAdapeter);
+        }
+
+        @Override
+        public void didError(String message) {
+            Toast.makeText(MainActivity.this,message, Toast.LENGTH_SHORT).show();
+        }
+    };
+
+
+
+
+
+
+
+
+
+
+
 }
