@@ -10,8 +10,15 @@
         android:label="RecipeApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SearchRecipe">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.APP_ID"-->
+<!--            android:value="ca-app-pub-4278219843663263~3347511713"/>-->
+
+        <activity
+            android:name=".activities.RecipeDetailsActivity"
+            android:exported="true" />
         <activity
             android:name=".activities.MainActivity"
             android:exported="true">

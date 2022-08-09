@@ -2,7 +2,7 @@
     <string name="api_key">7518a436347849f692ffd2f73551f1d7</string>
     <string name="app_name">RecipeApp</string>
 
-    
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dish_name">Dish Name</string>
 
@@ -11,7 +11,6 @@
     <string name="time">Time</string>
 
     <string name="like">Like</string>
-    <string name="todo">TODO</string>
     <string name="resdep">resdep</string>
     <string name="energi">energi</string>
     <string name="protein">pfrotein</string>
@@ -22,4 +21,29 @@
     <string name="angka_prjotein">angka_prjotein</string>
     <string name="angka_lemak">angka_lemak</string>
     <string name="angka_karbohidrat">angka_karbohidrat</string>
+    <string name="_1_pc">1 pc</string>
+    <string name="chicken">Chicken</string>
+    <string name="dessert">Dessert</string>
+    <string name="menu">Menu</string>
+    <string name="similar_name">Similar Name</string>
+    <string name="todo">TODO</string>
+
+
+
+    <string-array name="tags">
+        <item>main course</item>
+        <item>side dish</item>
+        <item>dessert</item>
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>marinade</item>
+        <item>fingerfood</item>
+        <item>snack</item>
+        <item>drink</item>
+    </string-array>
 </resources>

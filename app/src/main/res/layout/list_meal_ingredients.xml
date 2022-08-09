@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_ingredients_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:ellipsize="marquee"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:text="@string/_1_pc" />
+
+        <ImageView
+            android:id="@+id/imageView_ingredients"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/textView_ingredients_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:ellipsize="marquee"
+            android:text="@string/chicken"
+            android:textSize="16sp"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
