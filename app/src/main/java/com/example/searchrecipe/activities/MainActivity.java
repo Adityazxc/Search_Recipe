@@ -72,8 +72,6 @@ public class MainActivity extends AppCompatActivity {
         spinner.setOnItemSelectedListener(spinnerSelectedListener);
 
         manager=new RequestManager(this);
-//        manager.getRandomRecipes(randomRecipeResponseListener);
-//        dialog.show();
 
 
     }

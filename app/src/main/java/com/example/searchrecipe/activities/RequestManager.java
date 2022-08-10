@@ -4,9 +4,11 @@ import android.content.Context;
 
 import androidx.annotation.NonNull;
 
+import com.example.searchrecipe.Listeners.InstructionListener;
 import com.example.searchrecipe.Listeners.RandomRecipeResponseListener;
 import com.example.searchrecipe.Listeners.RecipeDetailsListener;
 import com.example.searchrecipe.Listeners.SimilarRecipeListener;
+import com.example.searchrecipe.Models.InstructionResponse;
 import com.example.searchrecipe.Models.RecipeDetailsResponse;
 import com.example.searchrecipe.Models.SimilarRecipeResponse;
 import com.example.searchrecipe.R;
@@ -79,15 +81,6 @@ public class RequestManager {
     }
 
 
-
-    private interface callRandomRecipes{
-                    @GET("recipes/random")
-            Call<RandomRecipeApiResponse>callRandomRecipe(
-                            @Query("apiKey") String apiKey,
-                            @Query("number") String number,
-                            @Query("tags")List<String> tags
-                            );
-    }
     public  void  getSimilarRecipe(SimilarRecipeListener listener, int id){
         CallSimilarRecipes callSimilarRecipes=retrofit.create(CallSimilarRecipes.class);
         Call<List<SimilarRecipeResponse>> call= callSimilarRecipes.callSimilarRecipe(id, "4", context.getString(R.string.api_key));
@@ -108,6 +101,38 @@ public class RequestManager {
         });
     }
 
+    public void  getInstruction(InstructionListener listener, int id){
+       CallInstructions callInstructions=retrofit.create(CallInstructions.class);
+       Call<List<InstructionResponse>> call=callInstructions.callInstructions(id,context.getString(R.string.api_key));
+       call.enqueue(new Callback<List<InstructionResponse>>() {
+           @Override
+           public void onResponse(@NonNull Call<List<InstructionResponse>> call, @NonNull Response<List<InstructionResponse>> response) {
+               if(!response.isSuccessful()){
+                   listener.didError(response.message());
+                   return;
+               }
+               listener.didFetch(response.body(),response.message());
+
+           }
+
+           @Override
+           public void onFailure(@NonNull Call<List<InstructionResponse>> call, @NonNull Throwable t) {
+               listener.didError(t.getMessage());
+           }
+       });
+
+
+
+    }
+    private interface callRandomRecipes{
+                    @GET("recipes/random")
+            Call<RandomRecipeApiResponse>callRandomRecipe(
+                            @Query("apiKey") String apiKey,
+                            @Query("number") String number,
+                            @Query("tags")List<String> tags
+                            );
+    }
+
     private interface CallRecipeDetails{
         @GET("recipes/{id}/information")
         Call<RecipeDetailsResponse>callRecipeDetails(
@@ -122,6 +147,14 @@ public class RequestManager {
             @Path("id")int id,
             @Query("number")String number,
             @Query("apiKey")String apiKey
+        );
+    }
+
+    private interface CallInstructions{
+        @GET("recipes/{id}/analyzedInstructions")
+        Call<List<InstructionResponse>>callInstructions(
+                @Path("id") int id,
+                @Query("apiKey")String apiKey
         );
     }
 }

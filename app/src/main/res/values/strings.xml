@@ -26,6 +26,16 @@
     <string name="dessert">Dessert</string>
     <string name="menu">Menu</string>
     <string name="similar_name">Similar Name</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="source">Source</string>
+    <string name="summary">Summary</string>
+    <string name="item">Item</string>
+    <string name="no">1</string>
+    <string name="similar_recipe">Similar Recipe</string>
+    <string name="instruction">Instruction</string>
+    <string name="step_name">Step Name</string>
+    <string name="equipment">Equipment</string>
+    <string name="ingredients">Ingredients</string>
     <string name="todo">TODO</string>
 
 

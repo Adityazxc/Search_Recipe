@@ -4,9 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2525" />
+        <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout-v28/activity_recipe_details.xml" value="0.12318840579710146" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/activity_recipe_details.xml" value="0.33" />
+        <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/activity_recipe_details.xml" value="0.25" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/activity_search_recipe.xml" value="0.1" />
+        <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/list_instruction.xml" value="0.33" />
+        <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/list_instruction_step_items.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/list_instruction_steps.xml" value="0.33" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/list_meal_ingredients.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/list_random_recipe.xml" value="0.29375" />
         <entry key="..\:/Users/adity/AndroidStudioProjects/SearchRecipe/app/src/main/res/layout/list_similar_recipe.xml" value="0.21302083333333333" />
