@@ -13,6 +13,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+
     }
 
     buildTypes {
@@ -52,6 +55,9 @@ dependencies {
 
     //tambahan
 //    implementation 'com.google.android.gms:play-services-ads:21.1.0'
+
+    //room Android
+    
 
 
     //Hapus Tag HTML

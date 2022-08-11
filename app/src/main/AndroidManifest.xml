@@ -12,19 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-<!--        <meta-data-->
-<!--            android:name="com.google.android.gms.ads.APP_ID"-->
-<!--            android:value="ca-app-pub-4278219843663263~3347511713"/>-->
-
         <activity
             android:name=".activities.RecipeDetailsActivity"
             android:exported="true" />
+
         <activity
             android:name=".activities.MainActivity"
             android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <activity android:name=".activities.SplashScreen"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

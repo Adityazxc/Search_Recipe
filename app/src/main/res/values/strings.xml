@@ -1,5 +1,13 @@
 <resources>
-    <string name="api_key">7518a436347849f692ffd2f73551f1d7</string>
+<!--    //dummy-->
+    <string name="api_key">0fb98274770a4703a4c0f489cc56dd6fc</string>
+
+
+<!--    <string name="api_key">0fb98274770a4703a4c0f489cc56dd6f</string>-->
+
+<!--    //key alternatif-->
+<!--    <string name="api_key">0251f6d7f0c24a9881e2205c800df3d6</string>-->
+
     <string name="app_name">RecipeApp</string>
 
 
