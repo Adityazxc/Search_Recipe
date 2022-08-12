@@ -7,4 +7,31 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+
+    <!-- Indicator -->
+    <color name="walkthrough_indicator">#9e9e9e</color>
+    <!--  Navigation  -->
+    <color name="navigation_background">#9e9e9e</color>
+    <color name="nav_active">#FFFFFF</color>
+    <color name="nav_inactive">#cfcfcf</color>
+
+    <color name="grey_800" />
+
+
+    <color name="primaryColor">#3EB5DF</color>
+    <color name="primaryLightColor">#6D50F9</color>
+    <color name="backgroundMainColor">#FEFEFE</color>
+    <color name="backgroundSecondColor">#f7f8fc</color>
+    <color name="primaryDarkColor">#707070</color>
+    <color name="secondaryColor">#FFF5EC</color>
+    <color name="secondaryLightColor">#cfcfcf</color>
+    <color name="secondaryDarkColor">#707070</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#BDBDBD</color>
 </resources>

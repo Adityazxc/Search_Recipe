@@ -51,8 +51,8 @@
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="28dp"
                     android:src="@drawable/ic_serving"
                     android:contentDescription="@string/todo" />
 
@@ -76,9 +76,9 @@
                 tools:ignore="UseCompoundDrawables">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_likes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_like"
                     android:contentDescription="@string/todo" />
 
                 <TextView
@@ -92,7 +92,7 @@
                     />
             </LinearLayout>
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"

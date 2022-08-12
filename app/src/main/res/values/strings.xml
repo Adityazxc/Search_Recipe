@@ -1,9 +1,9 @@
 <resources>
 <!--    //dummy-->
-    <string name="api_key">0fb98274770a4703a4c0f489cc56dd6fc</string>
+<!--    <string name="api_key">0fb98274770a4703a4c0f489cc5d6fc</string>-->
 
 
-<!--    <string name="api_key">0fb98274770a4703a4c0f489cc56dd6f</string>-->
+    <string name="api_key">0fb98274770a4703a4c0f489cc56dd6f</string>
 
 <!--    //key alternatif-->
 <!--    <string name="api_key">0251f6d7f0c24a9881e2205c800df3d6</string>-->
@@ -19,16 +19,7 @@
     <string name="time">Time</string>
 
     <string name="like">Like</string>
-    <string name="resdep">resdep</string>
-    <string name="energi">energi</string>
-    <string name="protein">pfrotein</string>
-    <string name="lemak">lgemak</string>
-    <string name="karbohidrat">karbohgidrat</string>
-    <string name="nama_resep">nama_resep</string>
-    <string name="angka_energi">angka_energi</string>
-    <string name="angka_prjotein">angka_prjotein</string>
-    <string name="angka_lemak">angka_lemak</string>
-    <string name="angka_karbohidrat">angka_karbohidrat</string>
+    <string name="title_activity_walkthrough">WalkthroughActivity</string>
     <string name="_1_pc">1 pc</string>
     <string name="chicken">Chicken</string>
     <string name="dessert">Dessert</string>
@@ -44,8 +35,15 @@
     <string name="step_name">Step Name</string>
     <string name="equipment">Equipment</string>
     <string name="ingredients">Ingredients</string>
+    <string name="next">Next</string>
+    <string name="cooking_a">Cooking a</string>
+    <string name="delicious_food">Delicious Food</string>
+    <string name="easily">Easily</string>
+    <string name="dicsovery_more_than_1200_food">Dicsovery more than 1200 food</string>
+    <string name="recipes_in_you_hands_and_cooking">recipes in you hands and cooking</string>
+    <string name="it_easily">it easily!</string>
     <string name="todo">TODO</string>
-
+    <string name="get_started">Get Started</string>
 
 
     <string-array name="tags">
